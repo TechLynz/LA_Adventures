@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  resources :comments
+  get 'pages/info'
+
   resources :adventures
   resources :adventures
   root 'adventures#index'
-  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
